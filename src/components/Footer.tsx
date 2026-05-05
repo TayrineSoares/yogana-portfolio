@@ -8,24 +8,30 @@ const Footer = () => {
       className=" 
         bg-[var(--color-text)]
         text-[var(--color-accent)]
-        px-5 pt-16 pb-10
-      
+        px-4 sm:px-6
+        pt-12 sm:pt-16
+        pb-8 sm:pb-10
         flex flex-col items-center"
     >
       <div
         className="
+          max-w-md sm:max-w-lg mx-auto         
           flex flex-col items-center
+          text-center sm:text-center
           "
       >
         {/* Brand */}
-        <h2 className=" text-3xl mb-4 text-[var(--color-bg)] ">
+        <h2 className=" 
+              text-3xl text-[var(--color-bg)]
+              font-light
+              mb-4  ">
           Yoga'Ana
         </h2>
 
         <p className=" 
-            text-[0.7rem]
+            text-[0.6rem] sm:text-[0.7rem]
             font-medium
-            tracking-[0.2em]
+            tracking-[0.15em] sm:tracking-[0.25em]
             uppercase
             text-[hsl(var(--color-accent))]
             mb-8">
@@ -33,7 +39,7 @@ const Footer = () => {
         </p>
 
         {/* Links */}
-        <nav className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-8">
+        <nav className="flex flex-wrap justify-center gap-x-4 sm:gap-x-6 gap-y-2 mb-8 ">
           {links.map((link) => (
             <a
               key={link}
@@ -46,16 +52,20 @@ const Footer = () => {
         </nav>
         
         {/* Social */}
-        <div className="flex gap-6 mb-12 text-[var(--color-accent)]">
+        <div className="flex gap-6 text-[var(--color-accent)]">
           <FaWhatsapp size={18} className="hover:-translate-y-1 transition"/>
 
         </div>
         
         {/* Divider */}
-        <div className="w-full h-px bg-[var(--color-accent)] opacity-20 mb-8" />
+        <div className="w-full h-px bg-[var(--color-accent)] opacity-20 my-8" />
 
         {/* Closing */}
-        <p className=" italic text-sm mb-4 opacity-70 font-[var(--font-display)]">
+        <p className="
+              italic 
+              font-[300]
+              text-xs md:text-sm mb-4 opacity-70 font-[var(--font-display)]
+              px-4 sm:px-0">
           Respire. Movimente-se. Volte para si.
         </p>
 
