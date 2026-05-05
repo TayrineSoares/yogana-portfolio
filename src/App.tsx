@@ -1,5 +1,6 @@
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Hero from './components/Hero';
 
 
 
@@ -15,6 +16,7 @@ function App() {
 
     <main className="flex-grow ">
        {/* pages will go here */}
+       <Hero />
 
     </main>
 
