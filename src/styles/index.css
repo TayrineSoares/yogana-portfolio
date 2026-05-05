@@ -1,16 +1,22 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 
 :root {
   
   /* Core colors */
-  --color-bg: #F5F1EB;
-  --color-primary: #A15C3A;
-  --color-accent: #B2B8A3;
-  --color-text: #4E3E34;
+  --color-bg: #F5F1EB;          /* beige */
+  --color-primary: #A15C3A;     /* terracota - headings, accents, primary */
+  --color-accent: #B2B8A3;      /* sage */
+  --color-text: #513D34;        /* dark brown */
 
   /* Optional */
-  --color-muted: #8a7a6f;
-  --color-white: #ffffff;
+  --color-muted: #8a7a6f;       /* mid warm brown*/
+  --color-white: #ffffff;       /* same as beige */
 
   /* Layout */
   --max-width: 1200px;
@@ -18,6 +24,8 @@
   /* Fonts */
   --font-display: 'Cormorant Garamond', serif;
   --font-body: 'Montserrat', sans-serif;
+
+  
 }
 
 html, body {
@@ -26,10 +34,17 @@ html, body {
   font-family: var(--font-body);
 }
 
-h1, h2, h3 {
-  font-family: var(--font-display);
-  color: var(--color-primary);
+@layer base {
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    font-weight: 300;
+    letter-spacing: 0.01em;
+    line-height: 1.15;
+  }
 }
+
+
+
 
 main {
   max-width: var(--max-width);
@@ -43,4 +58,9 @@ main {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

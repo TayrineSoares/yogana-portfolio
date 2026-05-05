@@ -3,6 +3,7 @@ import Footer from './components/Footer';
 
 
 
+
 function App() {
 
 
@@ -12,7 +13,7 @@ function App() {
       <Header/>
 
 
-    <main className="flex-grow">
+    <main className="flex-grow ">
        {/* pages will go here */}
 
     </main>
