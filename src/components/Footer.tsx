@@ -53,7 +53,16 @@ const Footer = () => {
         
         {/* Social */}
         <div className="flex gap-6 text-[var(--color-accent)]">
-          <FaWhatsapp size={18} className="hover:-translate-y-1 transition"/>
+          <a
+            href="https://wa.me/5531988094532?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20as%20aulas%20de%20yoga."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaWhatsapp
+              size={18}
+              className="hover:-translate-y-1 transition cursor-pointer"
+            />
+          </a>
 
         </div>
         
