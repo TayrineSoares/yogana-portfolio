@@ -16,7 +16,7 @@ const services = [
   },
 
   {
-    title: "Aulas em academia e/ou estúdio de yoga",
+    title: "Aulas em academia ou estúdio de yoga",
     description:
       "Aulas adaptadas para diferentes níveis, com foco em movimento consciente e equilíbrio.",
   },
