@@ -65,7 +65,7 @@ const About = () => {
               text-[var(--color-primary)]
               mb-2
             ">
-              Ana Claudia
+              Ana Cláudia
             </h2>
 
             {/* Divider */}
