@@ -1,6 +1,11 @@
 import anaPortrait from "../assets/ana-portrait.jpeg";
+import { useState } from "react";
+
 
 const About = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  
   return (
     <section
       id="sobre"

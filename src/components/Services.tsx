@@ -1,20 +1,33 @@
 const services = [
   {
-    title: "Aulas individuais",
+    title: "Aulas online (Zoom)",
     description:
       "Práticas personalizadas para suas necessidades, respeitando seu ritmo e momento.",
   },
   {
-    title: "Aulas em grupo",
+    title: "Aulas particulares coletivas",
     description:
       "Momentos de conexão e presença em grupo, com práticas acessíveis e acolhedoras.",
   },
   {
-    title: "Programas especiais",
+    title: "Aulas ao ar livre",
     description:
-      "Jornadas guiadas com foco em bem-estar, autoconhecimento e equilíbrio.",
+      "Práticas em contato com a natureza, promovendo leveza, presença e bem-estar.",
+  },
+
+  {
+    title: "Aulas em academia e/ou estúdio de yoga",
+    description:
+      "Aulas adaptadas para diferentes níveis, com foco em movimento consciente e equilíbrio.",
+  },
+
+  {
+    title: "Sessões de Reiki",
+    description:
+      "Terapia energética que promove relaxamento profundo, equilíbrio emocional e reconexão interior.",
   },
 ];
+
 
 const Services = () => {
   return (
