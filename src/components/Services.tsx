@@ -34,11 +34,12 @@ const Services = () => {
     <section
       id="servicos"
       className="
-        px-4 sm:px-6
+        w-full
         py-16 sm:py-20
+        bg-[var(--color-muted-soft)]
       "
     >
-      <div className="max-w-xl mx-auto text-center">
+      <div className="max-w-xl mx-auto px-4 sm:px-6 text-center">
 
         {/* Title */}
         <h2

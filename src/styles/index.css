@@ -15,7 +15,10 @@
   --color-text: #513D34;        /* dark brown */
 
   /* Optional */
-  --color-muted: #8a7a6f;       /* mid warm brown*/
+  --color-muted: #8a7a6f;       /* mid warm brown */
+
+  --color-muted-soft: #f1ece6;
+
   --color-white: #ffffff;       /* same as beige */
 
   /* Layout */
@@ -43,14 +46,6 @@ html, body {
   }
 }
 
-
-
-
-main {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 2rem;
-}
 
 *,
 *::before,

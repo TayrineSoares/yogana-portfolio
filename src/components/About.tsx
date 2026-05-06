@@ -1,5 +1,5 @@
-import anaPortrait from "../assets/ana-portrait.jpeg";
-import anaQuali from "../assets/ana-quali.jpeg";
+import anaPortrait from "../assets/ana-portrait-warm.jpg";
+import anaQuali from "../assets/ana-quali-warm.jpg";
 
 import { useState } from "react";
 
