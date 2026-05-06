@@ -1,11 +1,13 @@
 import anaPortrait from "../assets/ana-portrait.jpeg";
+import anaQuali from "../assets/ana-quali.jpeg";
+
 import { useState } from "react";
 
 
 const About = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  
+
   return (
     <section
       id="sobre"
@@ -45,13 +47,13 @@ const About = () => {
 
             {/* Label */}
             <p className="
-            text-[0.8rem]
-            tracking-[0.3em]
-            uppercase
-            font-medium
-            mb-6
-            text-[var(--color-accent)]
-          ">
+              text-[0.8rem]
+              tracking-[0.3em]
+              uppercase
+              font-medium
+              mb-6
+              text-[var(--color-accent)]
+            ">
               Sobre
             </p>
 
@@ -82,84 +84,119 @@ const About = () => {
               opacity-70
               mb-8
             ">
-              Ana Cláudia, 36 anos, natural de Passa Tempo, mora em BH-MG. Engenheira civil, maquiadora, praticante de yoga, apreciadora da
+              Ana Cláudia, 36 anos, natural de Passa Tempo, mora em Belo Horizonte-MG. <br/><br/>Engenheira civil, maquiadora, praticante de yoga, apreciadora da
               natureza, arte, literatura e boas conversas. Sempre em busca de
               desenvolvimento espiritual e humano.
             </p>
 
-            {/* Qualifications + Experience */}
-            <div className="mt-6">
-
-              <h3 className="
-                font-[var(--font-display)]
-                text-lg
-                tracking-[0.05em]
+            <button
+              onClick={() => setIsOpen(true)}
+              className="
+                mt-6
+                text-[0.7rem]
+                tracking-[0.2em]
                 uppercase
-                opacity-80
-                mb-4
-              ">
-                Qualificações & Experiência
-              </h3>
+                border border-[var(--color-primary)]
+                px-6 py-2
+                rounded-full
+                text-[var(--color-primary)]
+                hover:opacity-70
+                transition
+              "
+            >
+              Ver qualificações e experiência
+            </button>
 
-              <div className="space-y-6">
+            {isOpen && (
+              <div 
+                className="fixed inset-0 z-50 flex items-center justify-center bg-black/20 backdrop-blur-sm"
+                onClick={() => setIsOpen(false)}>
 
-                {/* Formação */}
-                <div>
-                  <p className="
-                    text-xs
-                    uppercase
-                    tracking-[0.15em]
-                    opacity-60
-                    mb-2
+                {/* Modal box */}
+                <div className="
+                  bg-[var(--color-bg)]
+                  max-w-lg w-full
+                  mx-4
+                  p-8
+                  rounded-2xl
+                  relative
+                  max-h-[80vh]
+                  overflow-y-auto"
+                  onClick={(e) => e.stopPropagation()}
+                >
+
+                  {/* Close button */}
+                  <button
+                    onClick={() => setIsOpen(false)}
+                    className="absolute top-4 right-4 text-sm opacity-60 hover:opacity-100 "
+                  >
+                    ✕
+                  </button>
+
+                  <div className="mb-6 overflow-hidden rounded-xl mt-6">
+                    <img
+                      src={anaQuali}
+                      alt="Ana Claudia"
+                      className="
+                        w-full
+                        h-48 sm:h-56
+                        object-cover
+                        object-center
+                        brightness-90 contrast-90
+                      "
+                    />
+                  </div>
+
+                  {/* Title
+                  <h3 className="
+                    font-[var(--font-display)]
+                    text-xl
+                    mb-6
+                    text-[var(--color-primary)]
                   ">
-                    Formação
-                  </p>
+                    Qualificações & Experiência
+                  </h3> */}
 
-                  <ul className="
-                    text-sm
-                    font-light
-                    leading-relaxed
-                    space-y-1
-                  ">
-                    <li>• Yoga Presencial - Escola Yoganaya (200h)</li>
-                    <li>• Yoga B-Learning - Pedro Kupfer (650h)</li>
-                    <li>
-                      • Workshops: Anatomia Integrativa, Alinhamento,
-                      Invertidas, Gokul Yoga, Art of Vinyasa, Pranayamas e Filosofia
-                    </li>
-                  </ul>
+                  <div className="space-y-6 text-sm font-light leading-relaxed">
+
+                    {/* Formação */}
+                    <div>
+                      <p className="uppercase text-xs tracking-[0.1em] opacity-60 mb-4">
+                        Formação
+                      </p>
+
+                      <ul className="space-y-1">
+                        <li>• Yoga Presencial - Escola Yoganaya (200h)</li>
+                        <li>• Yoga B-Learning - Pedro Kupfer (650h)</li>
+                        <li>• Workshops: Anatomia Integrativa, Alinhamento, Invertidas, Gokul Yoga, Art of Vinyasa, Pranayamas e Filosofia
+                        </li>
+                      </ul>
+                    </div>
+
+                    {/* Experiência */}
+                    <div>
+                      <p className="uppercase text-xs tracking-[0.1em] opacity-80 mb-4">
+                        Experiência
+                      </p>
+
+                      <ul className="space-y-1">
+                        <li>• Casa Yoga BH</li>
+                        <li>• Projeto Solidário Mahakarma Yoga</li>
+                        <li>• Yoga na Varanda Rosana Menezes</li>
+                        <li>• Namah Wellness</li>
+                        <li>• Academia Equilíbrio</li>
+                        <li>• Estúdios Maha Yoga e Manik</li>
+                        <li>• Aulas particulares</li>
+                      </ul>
+                    </div>
+
+                  </div>
                 </div>
-
-                {/* Experiência */}
-                <div>
-                  <p className="
-                    text-xs
-                    uppercase
-                    tracking-[0.15em]
-                    opacity-60
-                    mb-2
-                  ">
-                    Experiência
-                  </p>
-
-                  <ul className="
-                    text-sm
-                    font-light
-                    leading-relaxed
-                    space-y-1
-                  ">
-                    <li>• Casa Yoga BH</li>
-                    <li>• Projeto Solidário Mahakarma Yoga</li>
-                    <li>• Yoga na Varanda Rosana Menezes</li>
-                    <li>• Namah Wellness</li>
-                    <li>• Academia Equilíbrio</li>
-                    <li>• Estúdios Maha Yoga e Manik</li>
-                    <li>• Aulas particulares</li>
-                  </ul>
-                </div>
-
               </div>
-            </div>
+            )}
+
+            
+         
 
           </div>
         </div>
