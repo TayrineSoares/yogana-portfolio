@@ -71,7 +71,7 @@ const Hero = () => {
             opacity-70
           "
         >
-          Bem-vinda ao universo Yoga'Ana. Aqui o yoga é um convite para
+          Bem-vindo(a) ao universo Yoga'Ana. Aqui o yoga é um convite para
           reconectar corpo, mente e espírito através da presença, da respiração
           e do movimento consciente.
         </p>
