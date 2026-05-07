@@ -16,7 +16,7 @@ const Comunidade = () => {
       text: `Que aula M-A-R-A-V-I-L-H-O-S-A!
       Que profundo aprender mais sobre contentamento.
       Dessa vez, assim como na aula anterior, me senti no lugar certo, na hora certa, ouvindo exatamente aquilo que precisava.  GRATIDÃO ENORME por estar tendo esse privilégio de estar nas suas aulas.`,
-      author: "Nome do aluno", // replace later
+      author: "Renata",
     },
     {
       text: `Queria te agradecer muito pelas suas aulas maravilhosas, pelo atendimento no reiki que foi primoroso. Esse ano teria sido inúmeras vezes mais caótico se eu não tivesse sua guiança semanalmente.`,
