@@ -1,7 +1,7 @@
 import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
-  const links = ["Programas", "Serviços", "Sobre", "Comunidade"];
+  // const links = ["Programas", "Serviços", "Sobre", "Comunidade"];
 
   return (
     <footer
