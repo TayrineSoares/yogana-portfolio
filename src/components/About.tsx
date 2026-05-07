@@ -60,7 +60,7 @@ const About = () => {
             {/* Name */}
             <h2 className="
               font-[var(--font-display)]
-              text-3xl sm:text-4xl md:text-5xl
+              text-3xl md:text-5xl
               font-light
               text-[var(--color-primary)]
               mb-2

@@ -101,7 +101,7 @@ const Programas = () => {
                 mb-3
                 text-[var(--color-primary)]
               ">
-                Reiki Sessions
+                Sessões de Reiki
               </h3>
 
               <p className="
