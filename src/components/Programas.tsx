@@ -24,7 +24,7 @@ const Programas = () => {
             text-[var(--color-primary)]
             mb-4
           ">
-            Programas
+            Experiências
           </h2>
 
           <div className="w-12 h-px bg-[var(--color-accent)] mx-auto opacity-40" />
