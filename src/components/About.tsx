@@ -14,7 +14,7 @@ const About = () => {
       className="
         px-4 sm:px-6
         py-20 sm:py-24
-        bg-[var(--color-bg)]
+        bg-[var(--color-muted-soft)]
       "
     >
       <div className="max-w-3xl mx-auto">

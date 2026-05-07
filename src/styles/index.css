@@ -11,8 +11,10 @@
   /* Core colors */
   --color-bg: #F5F1EB;          /* beige */
   --color-primary: #A15C3A;     /* terracota - headings, accents, primary */
+  --color-primary-07: #EEE6DC;
+
   --color-accent: #B2B8A3;      /* sage */
-  --color-text: #513D34;        /* dark brown */
+  --color-text: #544248;        /* dark brown */
 
   /* Optional */
   --color-muted: #8a7a6f;       /* mid warm brown */
