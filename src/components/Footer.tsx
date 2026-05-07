@@ -39,7 +39,7 @@ const Footer = () => {
         </p>
 
         {/* Links */}
-        <nav className="flex flex-wrap justify-center gap-x-4 sm:gap-x-6 gap-y-2 mb-8 ">
+        {/* <nav className="flex flex-wrap justify-center gap-x-4 sm:gap-x-6 gap-y-2 mb-8 ">
           {links.map((link) => (
             <a
               key={link}
@@ -49,7 +49,7 @@ const Footer = () => {
               {link}
             </a>
           ))}
-        </nav>
+        </nav> */}
         
         {/* Social */}
         <div className="flex gap-6 text-[var(--color-accent)]">

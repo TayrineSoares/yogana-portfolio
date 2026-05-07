@@ -36,7 +36,7 @@ const Services = () => {
       className="
         w-full
         py-16 sm:py-20
-        bg-[var(--color-muted-soft)]
+        
       "
     >
       <div className="max-w-xl mx-auto px-4 sm:px-6 text-center">
