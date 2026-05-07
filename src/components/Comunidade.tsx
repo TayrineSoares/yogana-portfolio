@@ -75,18 +75,29 @@ const Comunidade = () => {
           </p>
 
           {/* CTA */}
-          <button className="
-            border border-[var(--color-text)]
-            px-6 py-3
-            rounded-full
-            text-[0.7rem]
-            tracking-[0.2em]
-            uppercase
-            transition-all duration-300
-            hover:opacity-70
-          ">
+          <a
+            href="https://chat.whatsapp.com/DRyVlmD8igm3kr3O4dkw6p"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="
+              inline-block
+              border border-[var(--color-primary)]
+              text-[var(--color-primary)]
+              px-6 py-3
+              rounded-full
+              text-[0.7rem]
+              tracking-[0.2em]
+              uppercase
+              transition-all duration-300
+              hover:opacity-70
+            "
+          >
             Entrar para a comunidade
-          </button>
+          </a>
+
+          {/* Divider */}
+          <div className="w-10 h-px bg-[var(--color-accent)] mx-auto opacity-40 my-10" />
+    
 
           {/* REVIEWS */}
           <div className="mt-10 text-center">
