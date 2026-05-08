@@ -1,4 +1,5 @@
 import { FaWhatsapp } from "react-icons/fa";
+import { getCurrentYear } from "../helpers/dateHelpers";
 
 const Footer = () => {
   const links = [
@@ -72,7 +73,7 @@ const Footer = () => {
             rel="noopener noreferrer"
           >
             <FaWhatsapp
-              size={18}
+              size={22}
               className="hover:-translate-y-1 transition cursor-pointer"
             />
           </a>
@@ -92,7 +93,7 @@ const Footer = () => {
         </p>
 
         <p className="text-xs opacity-40">
-          © 2026 Yoga'Ana · Todos os direitos reservados
+          © {getCurrentYear()} Yoga'Ana · Todos os direitos reservados
         </p>
       </div>
     </footer>
