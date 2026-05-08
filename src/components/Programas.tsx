@@ -10,7 +10,7 @@ const Programas = () => {
 
   return (
     <section
-      id="programas"
+      id="experiencias"
       className="w-full py-16 sm:py-20 bg-[var(--color-muted-soft)]"
     >
       <div className="max-w-4xl mx-auto px-4 sm:px-6">

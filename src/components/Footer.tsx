@@ -1,7 +1,12 @@
 import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
-  // const links = ["Programas", "Serviços", "Sobre", "Comunidade"];
+  const links = [
+    { label: "Experiências", href: "#experiencias" },
+    { label: "Serviços", href: "#servicos" },
+    { label: "Sobre", href: "#sobre" },
+    { label: "Comunidade", href: "#comunidade" },
+  ];
 
   return (
     <footer
@@ -39,17 +44,25 @@ const Footer = () => {
         </p>
 
         {/* Links */}
-        {/* <nav className="flex flex-wrap justify-center gap-x-4 sm:gap-x-6 gap-y-2 mb-8 ">
+
+        <nav className="flex flex-wrap justify-center gap-x-4 sm:gap-x-6 gap-y-2 mb-8 ">
           {links.map((link) => (
             <a
-              key={link}
-              href="#"
-              className="text-xs text-[var(--color-bg)] tracking-wide opacity-70 hover:opacity-100 transition"
+              key={link.label}
+              href={link.href}
+              className="
+                text-xs
+                text-[var(--color-bg)]
+                tracking-wide
+                opacity-70
+                hover:opacity-100
+                transition
+              "
             >
-              {link}
+              {link.label}
             </a>
           ))}
-        </nav> */}
+        </nav>
         
         {/* Social */}
         <div className="flex gap-6 text-[var(--color-accent)]">
