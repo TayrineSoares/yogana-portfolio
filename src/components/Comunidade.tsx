@@ -23,7 +23,7 @@ const Comunidade = () => {
       author: "Anna Claudia",
     },
 
-    {text: `Passando para agradecer novamente pelas nossas sessões. Fui com o coração aberto, e, já sentia que havia algo muito especial... mas, me surpreendi com a potência de tudo. Não tenho palavras para descrever a força de transformação do seu trabalho,e, espero que você chegue para aqueles que estão preparados e dispostos para viver isso também.`, 
+    {text: `Fui com o coração aberto, e, já sentia que havia algo muito especial... mas, me surpreendi com a potência de tudo. Não tenho palavras para descrever a força de transformação do seu trabalho,e, espero que você chegue para aqueles que estão preparados e dispostos para viver isso também.`, 
     author: "Maria",
     }
   ];
