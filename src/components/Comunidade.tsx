@@ -22,6 +22,10 @@ const Comunidade = () => {
       text: `Queria te agradecer muito pelas suas aulas maravilhosas, pelo atendimento no reiki que foi primoroso. Esse ano teria sido inúmeras vezes mais caótico se eu não tivesse sua guiança semanalmente.`,
       author: "Anna Claudia",
     },
+
+    {text: `Passando para agradecer novamente pelas nossas sessões. Fui com o coração aberto, e, já sentia que havia algo muito especial... mas, me surpreendi com a potência de tudo. Não tenho palavras para descrever a força de transformação do seu trabalho,e, espero que você chegue para aqueles que estão preparados e dispostos para viver isso também.`, 
+    author: "Maria",
+    }
   ];
 
   const [index, setIndex] = useState(0);
