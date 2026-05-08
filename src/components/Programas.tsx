@@ -19,10 +19,10 @@ const Programas = () => {
         <div className="text-center mb-12">
           <h2 className="
             font-[var(--font-display)]
-            text-3xl sm:text-4xl
+            text-3xl md:text-5xl
             font-light
             text-[var(--color-primary)]
-            mb-4
+            mb-2
           ">
             Experiências
           </h2>
