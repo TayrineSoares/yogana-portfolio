@@ -84,9 +84,7 @@ const About = () => {
               opacity-70
               mb-8
             ">
-              Ana Cláudia, 36 anos, natural de Passa Tempo, mora em Belo Horizonte-MG. <br/><br/>Engenheira civil, maquiadora, praticante de yoga, apreciadora da
-              natureza, arte, literatura e boas conversas. Sempre em busca de
-              desenvolvimento espiritual e humano.
+              Ana Cláudia, natural de Passa Tempo, mora em Belo Horizonte-MG. <br/><br/>Engenheira civil, maquiadora, professora e praticante de yoga, reikiana, apreciadora da natureza, arte, literatura e boas conversas. Sempre em busca de desenvolvimento espiritual e humano.
             </p>
 
             <button
