@@ -104,7 +104,7 @@ const About = () => {
                 transition
               "
             >
-              Ver qualificações e experiência
+              Qualificações e experiência
             </button>
 
             {isOpen && (
