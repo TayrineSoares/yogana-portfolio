@@ -5,7 +5,8 @@ import reikiImg from "../assets/reiki-warm.jpg";
 
 const Programas = () => {
 
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [openYoga, setOpenYoga] = useState(false);
+  const [openReiki, setOpenReiki] = useState(false);
 
 
   return (
@@ -31,7 +32,7 @@ const Programas = () => {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-start">
 
           {/* Card 1 */}
           <article className="
@@ -53,7 +54,7 @@ const Programas = () => {
             <div className="p-6 text-center">
               {/** logic */}
               {(() => {
-                const isOpen = openIndex === 0;
+                const isOpen = openYoga;
 
                 return (
                   <>
@@ -72,12 +73,11 @@ const Programas = () => {
                       opacity-60
                       mb-5
                     ">
-                      Práticas guiadas para fortalecer o corpo, melhorar a mobilidade
-                      e cultivar presença no dia a dia.
-                    </p>
+                      Práticas guiadas para fortalecer o corpo, melhorar a mobilidade e cultivar presença no dia a dia.
+                    </p> <br/>
 
                     <button
-                      onClick={() => setOpenIndex(isOpen ? null : 0)}
+                      onClick={() => setOpenYoga(!openYoga)}
                       className="
                         text-xs uppercase tracking-wide
                         text-[var(--color-accent)]
@@ -97,10 +97,10 @@ const Programas = () => {
                       <p className="
                         text-sm leading-relaxed opacity-70 whitespace-pre-line
                       ">
-        {`Minhas aulas unem elementos do Hatha Yoga, com foco na respiração, permanência nas posturas e meditação, e do Vinyasa Yoga, que traz mais fluidez e sincronização entre movimento e respiração.
-        Cada prática é conduzida com acolhimento e sensibilidade, respeitando as necessidades e o momento de cada aluno.
+                        {`Minhas aulas unem elementos do Hatha Yoga, com foco na respiração, permanência nas posturas e meditação, e do Vinyasa Yoga, que traz mais fluidez e sincronização entre movimento e respiração.
+                        Cada prática é conduzida com acolhimento e sensibilidade, respeitando as necessidades e o momento de cada aluno.
 
-        Valores a partir de R$40,00.`}
+                        Aulas a partir de R$180,00 por mês.`}
                       </p>
                     </div>
                   </>
@@ -129,7 +129,7 @@ const Programas = () => {
 
             <div className="p-6 text-center">
               {(() => {
-                const isOpen = openIndex === 1;
+                const isOpen = openReiki;
 
                 return (
                   <>
@@ -152,7 +152,7 @@ const Programas = () => {
                     </p>
 
                     <button
-                      onClick={() => setOpenIndex(isOpen ? null : 1)}
+                      onClick={() => setOpenReiki(!openReiki)}
                       className="
                         text-xs uppercase tracking-wide
                         text-[var(--color-accent)]
@@ -172,11 +172,11 @@ const Programas = () => {
                       <p className="
                         text-sm leading-relaxed opacity-70 whitespace-pre-line
                       ">
-        {`Através da escuta ativa e de um atendimento acolhedor, cada sessão é conduzida de forma individual, respeitando o momento e as necessidades de cada pessoa.
+                        {`Através da escuta ativa e de um atendimento acolhedor, cada sessão é conduzida de forma individual, respeitando o momento e as necessidades de cada pessoa.
 
-        Atendimentos com horário marcado.
+                        Atendimentos com horário marcado.
 
-        Valores a partir de R$200,00.`}
+                        Valores a partir de R$175,00 por sessão.`}
                       </p>
                     </div>
                   </>
