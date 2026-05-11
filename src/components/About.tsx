@@ -84,7 +84,7 @@ const About = () => {
               opacity-70
               mb-8
             ">
-              Ana Cláudia, natural de Passa Tempo, mora em Belo Horizonte-MG. <br/><br/>Engenheira civil, maquiadora, professora e praticante de yoga, reikiana, apreciadora da natureza, arte, literatura e boas conversas. Sempre em busca de desenvolvimento espiritual e humano.
+              Ana Cláudia, natural de Passa Tempo, mora em Belo Horizonte-MG. <br/><br/>Professora e praticante de yoga, reikiana, engenheira civil, maquiadora, apreciadora da natureza, arte, literatura e boas conversas. Sempre em busca de desenvolvimento espiritual e humano.
             </p>
 
             <button
