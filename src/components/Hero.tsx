@@ -59,7 +59,7 @@ const Hero = () => {
             mb-6
           "
         >
-          Um espaço para respirar, desacelerar e voltar para o seu centro.
+          Um espaço em sua vida para respirar, desacelerar e voltar para o seu centro.
         </h1>
 
         <p

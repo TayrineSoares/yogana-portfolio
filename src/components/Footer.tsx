@@ -89,7 +89,7 @@ const Footer = () => {
               font-[300]
               text-xs md:text-sm mb-4 opacity-70 font-[var(--font-display)]
               px-4 sm:px-0">
-          Respire. Movimente-se. Volte para si.
+          A verdadeira paz só pode ser encontrada dentro de si.
         </p>
 
         <p className="text-xs opacity-40">
