@@ -94,13 +94,26 @@ const Programas = () => {
                         ${isOpen ? "max-h-[300px] mt-4" : "max-h-0"}
                       `}
                     >
-                      <p className="
-                        text-sm leading-relaxed opacity-70 whitespace-pre-line
-                      ">
-                        {`Minhas aulas unem elementos do Hatha Yoga, com foco na respiração, permanência nas posturas e meditação, e do Vinyasa Yoga, que traz mais fluidez e sincronização entre movimento e respiração.
+                      <p className="text-sm leading-relaxed opacity-70 whitespace-pre-line">
+                        Minhas aulas unem elementos do Hatha Yoga, com foco na respiração, permanência nas posturas e meditação, e do Vinyasa Yoga, que traz mais fluidez e sincronização entre movimento e respiração.
+
+                        <br />
+                        <br />
+
                         Cada prática é conduzida com acolhimento e sensibilidade, respeitando as necessidades e o momento de cada aluno.
 
-                        Aulas a partir de R$180,00 por mês.`}
+                        <br />
+                        <br />
+
+
+                        <a
+                          href="https://www.canva.com/design/DAGEfMAUyVM/vG8Vx1UdH0Yv_qmZ5qgGjQ/view?utm_content=DAGEfMAUyVM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=haf6dcd079c#2"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className=" underline"
+                        >
+                          Veja valores e detalhes
+                        </a>
                       </p>
                     </div>
                   </>
