@@ -2,11 +2,14 @@ import { useState } from "react";
 
 import yogaImg from "../assets/yoga-warm.jpg";
 import reikiImg from "../assets/reiki-warm.jpg";
+import youtubeImg from "../assets/arlivre2.jpeg"
+
 
 const Programas = () => {
 
   const [openYoga, setOpenYoga] = useState(false);
   const [openReiki, setOpenReiki] = useState(false);
+  const [openYoutube, setOpenYoutube] = useState(false);
 
 
   return (
@@ -14,7 +17,7 @@ const Programas = () => {
       id="experiencias"
       className="w-full py-16 sm:py-20 bg-[var(--color-muted-soft)]"
     >
-      <div className="max-w-4xl mx-auto px-4 sm:px-6">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6">
 
         {/* Title */}
         <div className="text-center mb-12">
@@ -32,9 +35,9 @@ const Programas = () => {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-start">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 items-start">
 
-          {/* Card 1 */}
+          {/* Card 1 - YOGA */}
           <article className="
             bg-white/60
             rounded-2xl
@@ -123,7 +126,7 @@ const Programas = () => {
           </article>
 
 
-          {/* Card 2 */}
+          {/* Card 2 - REIKI */}
           <article className="
             bg-white/60
             rounded-2xl
@@ -190,6 +193,85 @@ const Programas = () => {
                         Atendimentos com horário marcado.
 
                         Valores a partir de R$175,00 por sessão.`}
+                      </p>
+                    </div>
+                  </>
+                );
+              })()}
+            </div>
+          </article>
+
+
+            {/* Card 3 - YOUTUBE*/}
+          <article className="
+            bg-white/60
+            rounded-2xl
+            overflow-hidden
+            shadow-sm
+            transition-all duration-300
+            hover:-translate-y-1 hover:shadow-md
+          ">
+            <div className="aspect-[4/5] overflow-hidden">
+              <img
+                src={youtubeImg}
+                alt="Canal do Youtube"
+                className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+              />
+            </div>
+
+            <div className="p-6 text-center">
+              {(() => {
+                const isOpen = openYoutube;
+
+                return (
+                  <>
+                    <h3 className="
+                      font-[var(--font-display)]
+                      text-xl
+                      mb-3
+                      text-[var(--color-primary)]
+                    ">
+                      Conteúdos Gratuitos
+                    </h3>
+
+                    <p className="
+                      text-sm
+                      leading-relaxed
+                      opacity-60
+                      mb-5
+                    ">
+                      Práticas de yoga, meditações guiadas e reflexões para cultivar mais presença, equilíbrio e bem-estar no dia a dia.
+                    </p>
+
+                    <button
+                      onClick={() => setOpenYoutube(!openYoutube)}
+                      className="
+                        text-xs uppercase tracking-wide
+                        text-[var(--color-accent)]
+                        border-b border-[var(--color-accent)]/50
+                        pb-1
+                      "
+                    >
+                      {isOpen ? "Fechar" : "Saiba mais"}
+                    </button>
+
+                    <div
+                      className={`
+                        overflow-hidden transition-all duration-500
+                        ${isOpen ? "max-h-[240px] mt-4" : "max-h-0"}
+                      `}
+                    >
+                      <p className="text-sm leading-relaxed opacity-70 whitespace-pre-line">
+                       
+
+                        <a
+                          href="https://www.youtube.com/@yogaanab"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="underline"
+                        >
+                          Acesse o canal no YouTube
+                        </a>
                       </p>
                     </div>
                   </>
