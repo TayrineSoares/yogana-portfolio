@@ -1,4 +1,4 @@
-import { FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { getCurrentYear } from "../helpers/dateHelpers";
 
 const Footer = () => {
@@ -76,6 +76,19 @@ const Footer = () => {
               size={22}
               className="hover:-translate-y-1 transition cursor-pointer"
             />
+          
+          </a>
+
+          <a
+            href="https://www.youtube.com/@yogaanab"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaYoutube
+              size={22}
+              className="hover:-translate-y-1 transition cursor-pointer"
+            />
+          
           </a>
 
         </div>
