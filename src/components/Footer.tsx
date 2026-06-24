@@ -1,4 +1,4 @@
-import { FaWhatsapp, FaYoutube } from "react-icons/fa";
+import { FaWhatsapp, FaYoutube, FaSpotify  } from "react-icons/fa";
 import { getCurrentYear } from "../helpers/dateHelpers";
 
 const Footer = () => {
@@ -85,6 +85,18 @@ const Footer = () => {
             rel="noopener noreferrer"
           >
             <FaYoutube
+              size={22}
+              className="hover:-translate-y-1 transition cursor-pointer"
+            />
+          
+          </a>
+
+          <a
+            href="https://open.spotify.com/user/12153969305?si=OagteJ9GRdCfoCax7BpIzw"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaSpotify
               size={22}
               className="hover:-translate-y-1 transition cursor-pointer"
             />
