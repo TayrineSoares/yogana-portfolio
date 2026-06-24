@@ -16,16 +16,17 @@ const Hero = () => {
       "
     >
       {/* Brand */}
-      <p className="
-            text-[0.8rem]
-            tracking-[0.3em]
-            uppercase
-            font-medium
+      <h2 className="
+           
+            tracking-[0.2em]
+            text-3xl
+           
+            font-large
             mb-6
             text-[var(--color-accent)]
           ">
         Yoga'Ana
-      </p>
+      </h2>
 
       {/* Image */}
       <div className="w-full max-w-[320px] mx-auto mb-8">
