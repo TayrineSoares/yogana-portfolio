@@ -113,7 +113,15 @@ const Programas = () => {
                           href="https://www.canva.com/design/DAGEfMAUyVM/vG8Vx1UdH0Yv_qmZ5qgGjQ/view?utm_content=DAGEfMAUyVM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=haf6dcd079c#2"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className=" underline"
+                          className="
+                            inline-flex items-center gap-1.5
+                            text-xs uppercase tracking-wide
+                            text-[var(--color-primary)]
+                            border-b border-[var(--color-primary)]/30
+                            pb-0.5
+                            hover:opacity-70 transition
+                          "
+                
                         >
                           Veja valores e detalhes
                         </a>
@@ -198,7 +206,15 @@ const Programas = () => {
                           href="https://wa.me/5531988094532?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20Reiki"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className=" underline"
+                          className="
+                            inline-flex items-center gap-1.5
+                            text-xs uppercase tracking-wide
+                            text-[var(--color-primary)]
+                            border-b border-[var(--color-primary)]/30
+                            pb-0.5
+                            hover:opacity-70 transition
+                          "
+                
                         >
                           Agende seu horário
                         </a>
@@ -278,13 +294,23 @@ const Programas = () => {
                       `}
                     >
                       <p className="text-sm leading-relaxed opacity-70 whitespace-pre-line">
-                       
+
+                        Um espaço aberto para levar para o seu dia a dia, quando e onde quiser.
+
+                        <br /> <br />                       
 
                         <a
                           href="https://www.youtube.com/@yogaanab"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="underline"
+                          className="
+                            inline-flex items-center gap-1.5
+                            text-xs uppercase tracking-wide
+                            text-[var(--color-primary)]
+                            border-b border-[var(--color-primary)]/30
+                            pb-0.5
+                            hover:opacity-70 transition
+                          "
                         >
                           Acesse o canal no YouTube
                         </a>
