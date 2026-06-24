@@ -165,7 +165,7 @@ const Programas = () => {
                       mb-5
                     ">
                       Terapia energética que promove relaxamento profundo, alívio do estresse e da ansiedade, trazendo mais equilíbrio e harmonia interior.
-                    </p>
+                    </p> 
 
                     <button
                       onClick={() => setOpenReiki(!openReiki)}
@@ -185,15 +185,31 @@ const Programas = () => {
                         ${isOpen ? "max-h-[240px] mt-4" : "max-h-0"}
                       `}
                     >
-                      <p className="
-                        text-sm leading-relaxed opacity-70 whitespace-pre-line
-                      ">
-                        {`Através da escuta ativa e de um atendimento acolhedor, cada sessão é conduzida de forma individual, respeitando o momento e as necessidades de cada pessoa.
+                      <p className="text-sm leading-relaxed opacity-70 whitespace-pre-line">
+                        Através da escuta ativa e de um atendimento acolhedor, cada sessão é conduzida de forma individual, respeitando o momento e as necessidades de cada pessoa.
+                      
+                        <br /> <br />
 
-                        Atendimentos com horário marcado.
+                        Valores a partir de R$175,00 por sessão.
 
-                        Valores a partir de R$175,00 por sessão.`}
+                        <br /> <br />
+
+                        <a
+                          href="https://wa.me/5531988094532?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20Reiki"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className=" underline"
+                        >
+                          Agende seu horário
+                        </a>
+
+
                       </p>
+
+                        
+                        
+    
+                      
                     </div>
                   </>
                 );
@@ -240,8 +256,8 @@ const Programas = () => {
                       opacity-60
                       mb-5
                     ">
-                      Práticas de yoga, meditações guiadas e reflexões para cultivar mais presença, equilíbrio e bem-estar no dia a dia.
-                    </p>
+                      Práticas de yoga, meditações guiadas e momentos de reflexão em conexão com a natureza.
+                    </p> <br/>
 
                     <button
                       onClick={() => setOpenYoutube(!openYoutube)}
