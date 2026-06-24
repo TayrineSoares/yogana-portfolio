@@ -1,13 +1,6 @@
-
-import {
-  FaLaptop,
-  FaUsers,
-  FaLeaf,
-  FaSpa,
-} from "react-icons/fa";
+import { FaLaptop, FaUsers, FaLeaf, FaSpa, FaYoutube } from "react-icons/fa";
 
 import { GiMeditation } from "react-icons/gi";
-
 
 const services = [
   {
@@ -40,6 +33,13 @@ const services = [
       "Terapia energética que promove relaxamento profundo, equilíbrio emocional e reconexão interior.",
     icon: <FaSpa />,
   },
+  {
+    title: "Conteúdos gratuitos no YouTube",
+    description:
+      "Práticas de yoga, meditações guiadas e reflexões para cultivar mais presença, equilíbrio e bem-estar no dia a dia.",
+    icon: <FaYoutube />,
+    link: "https://www.youtube.com/@yogaanab",
+  },
 ];
 
 const Services = () => {
@@ -53,7 +53,6 @@ const Services = () => {
       "
     >
       <div className="max-w-xl mx-auto px-4 sm:px-6 text-center">
-
         {/* Title */}
         <h2
           className="
@@ -69,39 +68,53 @@ const Services = () => {
 
         {/* Cards */}
         <div className="flex flex-col">
+          {services.map((service, index) => {
+            const Wrapper = service.link ? "a" : "div";
+            const wrapperProps = service.link
+              ? {
+                  href: service.link,
+                  target: "_blank",
+                  rel: "noopener noreferrer",
+                }
+              : {};
 
-           {services.map((service, index) => (
+            return (
               <div key={service.title}>
-
                 {/* Service Row */}
-                <div className="
+                <Wrapper
+                  {...wrapperProps}
+                  className="
                   flex flex-col sm:flex-row
                   items-center sm:items-start
                   gap-5
                   py-8
                   text-center sm:text-left
-                ">
-
+                  hover:opacity-80 transition-opacity
+                "
+                >
                   {/* Icon Circle */}
-                  <div className="
+                  <div
+                    className="
                     w-20 h-20
                     rounded-full
                     bg-[var(--color-muted-soft)]
                     flex items-center justify-center
                     flex-shrink-0
-                  ">
-                    <div className="
+                  "
+                  >
+                    <div
+                      className="
                       text-3xl
                       text-[var(--color-primary)]
                       opacity-80
-                    ">
+                    "
+                    >
                       {service.icon}
                     </div>
                   </div>
 
                   {/* Text */}
                   <div className="flex-1">
-
                     <h3
                       className="
                         font-[var(--font-display)]
@@ -123,20 +136,17 @@ const Services = () => {
                     >
                       {service.description}
                     </p>
-
                   </div>
-                </div>
+                </Wrapper>
 
                 {/* Divider */}
                 {index !== services.length - 1 && (
                   <div className="w-full h-px bg-[var(--color-accent)] opacity-20" />
                 )}
-
               </div>
-            ))}
-
-          </div>
-
+            );
+          })}
+        </div>
       </div>
     </section>
   );
