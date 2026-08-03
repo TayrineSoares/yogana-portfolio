@@ -1,6 +1,7 @@
 import Header from './components/Header';
 
 import Hero from './components/Hero';
+import TemporaryOffer from './components/TemporaryOffer';
 import Programas from './components/Programas';
 import Services from './components/Services';
 import About from './components/About';
@@ -22,6 +23,7 @@ function App() {
     <main className="flex-grow ">
        {/* pages will go here */}
        <Hero />
+       <TemporaryOffer />
        <Programas />
        <Services />
        <About />

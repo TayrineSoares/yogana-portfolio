@@ -13,6 +13,7 @@ const Hero = () => {
         justify-start
         px-4 sm:px-6
         pt-16 pb-16
+        bg-[var(--color-muted-soft)]
       "
     >
       {/* Brand */}
