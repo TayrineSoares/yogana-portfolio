@@ -1,42 +1,44 @@
-import Header from './components/Header';
+import { useEffect } from "react";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Retiros from "./pages/Retiros";
 
-import Hero from './components/Hero';
-import TemporaryOffer from './components/TemporaryOffer';
-import Programas from './components/Programas';
-import Services from './components/Services';
-import About from './components/About';
-import Comunidade from './components/Comunidade';
+function ScrollToHash() {
+  const { pathname, hash } = useLocation();
 
+  useEffect(() => {
+    if (hash) {
+      const id = hash.slice(1);
+      requestAnimationFrame(() => {
+        document.getElementById(id)?.scrollIntoView();
+      });
+      return;
+    }
 
-import Footer from './components/Footer';
+    window.scrollTo(0, 0);
+  }, [pathname, hash]);
 
+  return null;
+}
 
 function App() {
-
-
   return (
-     <div className="min-h-screen flex flex-col">
-
-      <Header/>
-
-
-    <main className="flex-grow ">
-       {/* pages will go here */}
-       <Hero />
-       <TemporaryOffer />
-       <Programas />
-       <Services />
-       <About />
-       <Comunidade />
-
-
-    </main>
-
-      <Footer/>
-      
-     
-    </div>
+    <BrowserRouter>
+      <ScrollToHash />
+      <div className="min-h-screen flex flex-col">
+        <Header />
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/retiros" element={<Retiros />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 
-export default App
+export default App;

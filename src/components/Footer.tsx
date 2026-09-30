@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { FaWhatsapp, FaYoutube, FaSpotify  } from "react-icons/fa";
 import { getCurrentYear } from "../helpers/dateHelpers";
 
@@ -48,9 +49,9 @@ const Footer = () => {
 
         <nav className="flex flex-wrap justify-center gap-x-4 sm:gap-x-6 gap-y-2 mb-8 ">
           {links.map((link) => (
-            <a
+            <Link
               key={link.label}
-              href={link.href}
+              to={`/${link.href}`}
               className="
                 text-xs
                 text-[var(--color-bg)]
@@ -61,7 +62,7 @@ const Footer = () => {
               "
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
         

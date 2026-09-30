@@ -1,7 +1,9 @@
 import { useState } from "react";
 
+import { Link } from "react-router-dom";
 import yogaImg from "../assets/yoga-warm.jpg";
 import reikiImg from "../assets/reiki-warm.jpg";
+import retiroImg from "../assets/retiro-warm-card.png";
 import youtubeImg from "../assets/arlivre2.jpeg"
 
 
@@ -9,6 +11,7 @@ const Programas = () => {
 
   const [openYoga, setOpenYoga] = useState(false);
   const [openReiki, setOpenReiki] = useState(false);
+  const [openRetiros, setOpenRetiros] = useState(false);
   const [openYoutube, setOpenYoutube] = useState(false);
 
 
@@ -35,7 +38,7 @@ const Programas = () => {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-start">
 
           {/* Card 1 - YOGA */}
           <article className="
@@ -63,7 +66,7 @@ const Programas = () => {
                   <>
                     <h3 className="
                       font-[var(--font-display)]
-                      text-xl
+                      text-2xl md:text-3xl
                       mb-3
                       text-[var(--color-primary)]
                     ">
@@ -159,7 +162,7 @@ const Programas = () => {
                   <>
                     <h3 className="
                       font-[var(--font-display)]
-                      text-xl
+                      text-2xl md:text-3xl
                       mb-3
                       text-[var(--color-primary)]
                     ">
@@ -234,7 +237,93 @@ const Programas = () => {
           </article>
 
 
-            {/* Card 3 - YOUTUBE*/}
+          {/* Card 3 - RETIROS */}
+          <article className="
+            bg-white/60
+            rounded-2xl
+            overflow-hidden
+            shadow-sm
+            transition-all duration-300
+            hover:-translate-y-1 hover:shadow-md
+          ">
+            <div className="aspect-[4/5] overflow-hidden">
+              <img
+                src={retiroImg}
+                alt="Retiros"
+                className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+              />
+            </div>
+
+            <div className="p-6 text-center">
+              {(() => {
+                const isOpen = openRetiros;
+
+                return (
+                  <>
+                    <h3 className="
+                      font-[var(--font-display)]
+                      text-2xl md:text-3xl
+                      mb-3
+                      text-[var(--color-primary)]
+                    ">
+                      Retiros
+                    </h3>
+
+                    <p className="
+                      text-sm
+                      leading-relaxed
+                      opacity-60
+                      mb-5
+                    ">
+                      Imersões na natureza da serra mineira para cultivar presença através do yoga, do silêncio e da espiritualidade.
+                    </p> <br/>
+
+                    <button
+                      onClick={() => setOpenRetiros(!openRetiros)}
+                      className="
+                        text-xs uppercase tracking-wide
+                        text-[var(--color-accent)]
+                        border-b border-[var(--color-accent)]/50
+                        pb-1
+                      "
+                    >
+                      {isOpen ? "Fechar" : "Saiba mais"}
+                    </button>
+
+                    <div
+                      className={`
+                        overflow-hidden transition-all duration-500
+                        ${isOpen ? "max-h-[240px] mt-4" : "max-h-0"}
+                      `}
+                    >
+                      <p className="text-sm leading-relaxed opacity-70 whitespace-pre-line">
+                        Três dias de yoga para todos os níveis, alimentação vegetariana, caminhadas até cachoeiras e tempo para descansar e integrar.
+
+                        <br /> <br />
+
+                        <Link
+                          to="/retiros"
+                          className="
+                            inline-flex items-center gap-1.5
+                            text-xs uppercase tracking-wide
+                            text-[var(--color-primary)]
+                            border-b border-[var(--color-primary)]/30
+                            pb-0.5
+                            hover:opacity-70 transition
+                          "
+                        >
+                          Conheça os retiros
+                        </Link>
+                      </p>
+                    </div>
+                  </>
+                );
+              })()}
+            </div>
+          </article>
+
+
+            {/* Card 4 - YOUTUBE*/}
           <article className="
             bg-white/60
             rounded-2xl
@@ -259,7 +348,7 @@ const Programas = () => {
                   <>
                     <h3 className="
                       font-[var(--font-display)]
-                      text-xl
+                      text-2xl md:text-3xl
                       mb-3
                       text-[var(--color-primary)]
                     ">
