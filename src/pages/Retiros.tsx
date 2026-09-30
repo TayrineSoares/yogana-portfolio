@@ -96,7 +96,7 @@ const Retiros = () => {
                 mb-2
               "
             >
-              Último retiro
+              Nosso último retiro
             </h2>
 
             <p className="text-sm leading-relaxed opacity-60">
@@ -151,7 +151,18 @@ const Retiros = () => {
                     : (index - 1 + photos.length) % photos.length
               );
             }}
-            className="text-xs opacity-30 hover:opacity-60 transition px-4"
+            className="
+              absolute left-3 sm:left-6 top-1/2 -translate-y-1/2
+              flex items-center justify-center
+              w-11 h-11
+              rounded-full
+              border border-[var(--color-primary)]
+              bg-[var(--color-bg)]
+              text-[var(--color-primary)]
+              text-xl
+              hover:opacity-70
+              transition
+            "
             aria-label="Foto anterior"
           >
             ←
@@ -172,7 +183,18 @@ const Retiros = () => {
                 index === null ? index : (index + 1) % photos.length
               );
             }}
-            className="text-xs opacity-30 hover:opacity-60 transition px-4"
+            className="
+              absolute right-3 sm:right-6 top-1/2 -translate-y-1/2
+              flex items-center justify-center
+              w-11 h-11
+              rounded-full
+              border border-[var(--color-primary)]
+              bg-[var(--color-bg)]
+              text-[var(--color-primary)]
+              text-xl
+              hover:opacity-70
+              transition
+            "
             aria-label="Próxima foto"
           >
             →

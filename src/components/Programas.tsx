@@ -175,7 +175,7 @@ const Programas = () => {
                       opacity-60
                       mb-5
                     ">
-                      Terapia energética que promove relaxamento profundo, alívio do estresse e da ansiedade, trazendo mais equilíbrio e harmonia interior.
+                      Terapia energética que promove relaxamento profundo e alívio do estresse e da ansiedade. Sessões online ou presenciais em Belo Horizonte
                     </p> 
 
                     <button
