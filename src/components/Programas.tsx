@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import yogaImg from "../assets/yoga-warm.jpg";
 import reikiImg from "../assets/reiki-warm.jpg";
-import retiroImg from "../assets/retiro-warm-card.png";
+import retiroImg from "../assets/retiro-card-warm.jpeg";
 import youtubeImg from "../assets/arlivre2.jpeg"
 
 
