@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import TemporaryOffer from "../components/TemporaryOffer";
 
 const galleryModules = import.meta.glob(
@@ -122,6 +123,27 @@ const Retiros = () => {
                 />
               </button>
             ))}
+          </div>
+
+          <div className="mt-12 text-center">
+            <Link
+              to="/"
+              className="
+                inline-block
+                border border-[var(--color-primary)]
+                text-[var(--color-primary)]
+                px-8 py-3
+                rounded-full
+                text-[0.7rem]
+                tracking-[0.2em]
+                uppercase
+                font-medium
+                transition-all duration-300
+                hover:opacity-70
+              "
+            >
+              Voltar
+            </Link>
           </div>
         </div>
       </section>
