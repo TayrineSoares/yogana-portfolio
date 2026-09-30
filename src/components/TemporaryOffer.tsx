@@ -1,6 +1,7 @@
 import retiro1 from "../assets/retiro-1.jpeg";
 import retiro2 from "../assets/retiro-2.jpeg";
 import retiro3 from "../assets/retiro-3.jpeg";
+import { comunidadeLink } from "./Comunidade";
 import Button from "./ui/Button";
 
 const TemporaryOffer = () => {
@@ -75,7 +76,7 @@ const TemporaryOffer = () => {
                 mb-2
               "
             >
-              Retiro de Primavera
+              Retiros na Serra
             </h2>
 
             <div
@@ -96,7 +97,7 @@ const TemporaryOffer = () => {
                 mb-2
               "
             >
-              25 a 27 de Setembro 2026
+              Próximas datas em breve
             </p>
 
             <p
@@ -118,11 +119,11 @@ const TemporaryOffer = () => {
                 mb-8
               "
             >
-              Em meio à natureza da serra mineira, um convite a cultivar presença através do yoga, do silêncio e da espiritualidade.
+              Em meio à natureza da serra mineira, nossos retiros são um convite a cultivar presença através do yoga, do silêncio e da espiritualidade. Novas edições acontecem ao longo do ano. Entre na nossa comunidade para receber as novidades em primeira mão.
             </p>
 
-            <Button href="https://www.canva.com/design/DAG0N8vITeY/lF1Ax49nS0hT9x1jWYq4oQ/view">
-              Mais informações
+            <Button href={comunidadeLink}>
+              Entrar na comunidade
             </Button>
           </div>
         </div>

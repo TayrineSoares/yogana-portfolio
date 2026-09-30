@@ -1,5 +1,8 @@
 import { useState } from "react";
 
+export const comunidadeLink =
+  "https://chat.whatsapp.com/DRyVlmD8igm3kr3O4dkw6p";
+
 const Comunidade = () => {
 
   const reviews = [
@@ -80,7 +83,7 @@ const Comunidade = () => {
 
           {/* CTA */}
           <a
-            href="https://chat.whatsapp.com/DRyVlmD8igm3kr3O4dkw6p"
+            href={comunidadeLink}
             target="_blank"
             rel="noopener noreferrer"
             className="
