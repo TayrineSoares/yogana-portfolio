@@ -2,9 +2,10 @@ type ButtonProps = {
   children: React.ReactNode;
   href?: string;
   onClick?: () => void;
+  className?: string;
 };
 
-const Button = ({ children, href, onClick }: ButtonProps) => {
+const Button = ({ children, href, onClick, className = "" }: ButtonProps) => {
   const baseStyles = `
     inline-block
     border border-[var(--color-primary)]
@@ -17,6 +18,7 @@ const Button = ({ children, href, onClick }: ButtonProps) => {
     font-medium
     transition-all duration-300
     hover:opacity-70
+    ${className}
   `;
 
   if (href) {

@@ -1,4 +1,5 @@
 import Hero from "../components/Hero";
+import WorkshopSection from "../components/WorkshopSection";
 import Programas from "../components/Programas";
 import Services from "../components/Services";
 import About from "../components/About";
@@ -8,6 +9,7 @@ const Home = () => {
   return (
     <>
       <Hero />
+      <WorkshopSection />
       <Programas />
       <Services />
       <About />
