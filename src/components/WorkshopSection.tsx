@@ -13,7 +13,7 @@ const workshop = {
     { label: "Data", value: "08/11" },
     { label: "Horário", value: "10h às 12h" },
     { label: "Valor", value: "R$ 180" },
-    { label: "Local", value: "Maha Yoga" },
+    { label: "Local", value: "Maha Yoga", secondary: "Belo Horizonte / MG" },
   ],
   cta: {
     label: "Quero me inscrever",
@@ -185,6 +185,19 @@ const WorkshopSection = () => {
                   >
                     {item.value}
                   </p>
+                  {item.secondary ? (
+                    <p
+                      className="
+                        mt-0.5
+                        text-xs
+                        font-light
+                        text-[var(--color-muted)]
+                        opacity-80
+                      "
+                    >
+                      {item.secondary}
+                    </p>
+                  ) : null}
                 </div>
               ))}
             </div>
